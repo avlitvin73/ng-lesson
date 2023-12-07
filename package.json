@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avlitvin73/typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avlitvin73/typescript/issues"
+  },
+  "homepage": "https://github.com/avlitvin73/typescript#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "tsc": "^2.0.4"
+  }
+}
