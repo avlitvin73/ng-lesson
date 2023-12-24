@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { StarComponent } from '../star/star.component';
+import { author } from '../authors.service';
 
 @Component({
   selector: 'app-author',
@@ -9,5 +10,5 @@ import { StarComponent } from '../star/star.component';
   styleUrl: './author.component.css'
 })
 export class AuthorComponent {
-  @Input() author = '';
+  @Input() author: author | null = null;
 }

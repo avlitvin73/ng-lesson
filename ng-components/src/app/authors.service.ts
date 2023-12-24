@@ -1,16 +1,33 @@
 import { Injectable } from '@angular/core';
 
+export interface author {
+  name: string,
+  likesCount: number,
+  isLiked: boolean
+}
 @Injectable({
   providedIn: 'root'
 })
 export class AuthorsService {
-  private _authors: string[]
+  private _authors: author[]
 
   constructor() { 
     this._authors = [
-      'author1',
-      'author2',
-      'author3'
+      {
+        name:'author1',
+        likesCount: 19,
+        isLiked: false
+      },
+      {
+        name:'author2',
+        likesCount: 9,
+        isLiked: true
+      },
+      {
+        name:'author3',
+        likesCount: 3,
+        isLiked: false
+      },
     ]
   }
 

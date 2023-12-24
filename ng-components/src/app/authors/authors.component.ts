@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthorsService } from '../authors.service';
+import { AuthorsService, author } from '../authors.service';
 import { NgFor } from '@angular/common';
 import { AuthorComponent } from '../author/author.component';
 
@@ -11,7 +11,7 @@ import { AuthorComponent } from '../author/author.component';
   styleUrl: './authors.component.css'
 })
 export class AuthorsComponent {
-  authors: string[]
+  authors: author[]
 
   constructor(authorService: AuthorsService) {
     this.authors = authorService.authors

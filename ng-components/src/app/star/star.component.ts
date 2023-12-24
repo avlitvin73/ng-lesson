@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-star',
@@ -8,15 +8,18 @@ import { Component } from '@angular/core';
   styleUrl: './star.component.css'
 })
 export class StarComponent {
-  clicked = false
+  @Input() isLiked = false
+  @Input() likesCount = 0
   fillColor = 'transparent'
 
   toggleStar() {
-    if (this.clicked) {
+    if (this.isLiked) {
       this.fillColor = 'transparent'
+      this.likesCount -= 1
     } else {
       this.fillColor = "#f5e169"
+      this.likesCount += 1
     }
-    this.clicked = !this.clicked
+    this.isLiked = !this.isLiked
   }
 }

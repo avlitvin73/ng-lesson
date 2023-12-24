@@ -1,1 +1,1 @@
-<li>{{ author }}<app-star/></li>
+<li>{{ author!.name }}<app-star [likesCount]="author!.likesCount" [isLiked]="author!.isLiked"/></li>
