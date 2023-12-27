@@ -1,0 +1,4 @@
+<div class="container" (click)="handleClick()">
+    <div class="title" [class.active]="zippy">{{ title }} </div>
+    <ng-content *ngIf="zippy" [class.content]="zippy"></ng-content>
+</div>

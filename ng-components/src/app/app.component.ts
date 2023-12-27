@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { AuthorsComponent } from './authors/authors.component';
 import { TextComponent } from './text/text.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { TextComponent } from './text/text.component';
     CommonModule, 
     RouterOutlet, 
     AuthorsComponent, 
-    TextComponent
+    TextComponent,
+    ZippyComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

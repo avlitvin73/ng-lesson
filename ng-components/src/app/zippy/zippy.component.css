@@ -1,0 +1,17 @@
+.container {
+    border: 1px solid black;
+    font-size: large;
+    margin: 1rem;
+}
+
+.container > * {
+    padding: 2rem 4rem;
+}
+
+.title {
+    font-weight: 900;
+}
+
+.active {
+    background-color: #eee;
+}
